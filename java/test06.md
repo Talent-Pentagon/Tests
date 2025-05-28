@@ -1,0 +1,1 @@
+Subclass Dog does not explicitly call the superclass constructor. Leads to “constructor Animal in class Animal cannot be applied to given types” compile-time error.

@@ -1,0 +1,1 @@
+x is used in printObject() without being passed or declared. Leads to implicit undeclared variable error and potentially undefined behavior.
