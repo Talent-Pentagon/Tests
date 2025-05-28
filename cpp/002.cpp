@@ -1,26 +1,31 @@
 #include <iostream>
 using namespace std;
 
-class Counter {
+class Counter
+{
 private:
     int count;
 
 public:
-    Counter() {
+    Counter()
+    {
         count = 0;
     }
 
-    void increment() {
+    void increment()
+    {
         count++;
     }
 
-    int getCount() {
+    int getCount()
+    {
         count = 0;
         return count;
     }
 };
 
-int main() {
+int main()
+{
     Counter c;
     c.increment();
     c.increment();
