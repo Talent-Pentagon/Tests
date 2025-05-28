@@ -1,1 +1,1 @@
-Subclass Dog does not explicitly call the superclass constructor. Leads to “constructor Animal in class Animal cannot be applied to given types” compile-time error.
+Subclass does not call superclass constructor explicitly. Causes compilation failure — breaks unit test runs with inputs.

@@ -1,16 +1,20 @@
 #include <iostream>
+using namespace std;
+
 class Car {
-    std::string model;
+    string model;
 public:
-    Car(std::string m) {
+    Car(string m) {
         model = m;
     }
     void show() {
-        std::cout << "Model: " << model << std::endl;
+        cout << "Model: " << model << endl;
     }
 };
 
-int main() {
+int main(int argc, char* argv[]) {
+    if (argc < 2) return 1;
     Car c;
     c.show();
+    return 0;
 }

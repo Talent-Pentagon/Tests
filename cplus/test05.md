@@ -1,1 +1,1 @@
-No default constructor. Car c; causes a constructor call mismatch error. The class requires a parameterized constructor.
+Constructor requires a parameter but default constructor is used. Causes compile-time error and prevents input testing.
