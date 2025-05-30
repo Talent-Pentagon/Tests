@@ -1,0 +1,1 @@
+Test050 fails to compile with a syntax error in the friend function definition.

@@ -1,0 +1,1 @@
+Test047 compiles but gives an error when trying to access a class member through an object instance.

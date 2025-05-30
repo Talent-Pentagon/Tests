@@ -1,0 +1,1 @@
+Test053 compiles but gives an ambiguity error when trying to call a method in the derived class.

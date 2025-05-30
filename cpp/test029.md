@@ -1,0 +1,1 @@
+Test029 causes the program to crash or hang when I try to copy an object.

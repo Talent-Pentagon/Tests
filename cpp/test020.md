@@ -1,0 +1,1 @@
+Test020 runs but the destructor behavior seems incorrect when deleting objects through base class pointers.

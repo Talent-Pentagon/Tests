@@ -1,0 +1,1 @@
+Test056 fails to compile with a template-related error when calling the display function.

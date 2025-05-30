@@ -1,0 +1,1 @@
+Test026 compiles with warnings and produces unpredictable results when I try to use the returned value.

@@ -1,0 +1,1 @@
+When I run test011.cpp, the code doesn't compile and gives a syntax error near the end of the class definition.
