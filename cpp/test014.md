@@ -1,1 +1,1 @@
-014.cpp compiles but gives an error saying I cannot access a certain member of the class.
+When I run 014.cpp, the Animal constructor is invoked without the required int argument, causing a compile-time error.

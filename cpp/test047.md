@@ -1,1 +1,1 @@
-047.cpp compiles but gives an error when trying to access a class member through an object instance.
+When I run 047.cpp, passing Derived by value to announce(Base b) slices off the derived portion, so the overridden method is never invoked.

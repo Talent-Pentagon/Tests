@@ -1,1 +1,1 @@
-053.cpp compiles but gives an ambiguity error when trying to call a method in the derived class.
+In file 053.cpp, marking Derived::show() with override fails because show is not declared as virtual in the base class, leading to a compilation error.

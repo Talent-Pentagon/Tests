@@ -1,1 +1,1 @@
-026.cpp compiles with warnings and produces unpredictable results when I try to use the returned value.
+In file 026.cpp, the static member count is accessed through an object instance (c.count), which is improper for a static member.

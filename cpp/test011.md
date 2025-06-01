@@ -1,1 +1,1 @@
-When I run 011.cpp, the code doesn't compile and gives a syntax error near the end of the class definition.
+In the test 011.cpp, the constructor uses == instead of an assignment operator, so name is never initialized.

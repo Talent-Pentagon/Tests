@@ -1,1 +1,1 @@
-029.cpp causes the program to crash or hang when I try to copy an object.
+When I run 029.cpp, instantiating Interface i; fails because Interface is an abstract class with a pure virtual function.

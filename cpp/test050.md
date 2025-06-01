@@ -1,1 +1,1 @@
-050.cpp fails to compile with a syntax error in the friend function definition.
+In the test 050.cpp, Child::greet lacks the override specifier while attempting to override a base class method, causing a mismatch risk.

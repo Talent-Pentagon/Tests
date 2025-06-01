@@ -1,1 +1,1 @@
-023.cpp compiles and runs but I'm not getting proper polymorphic behavior as expected.
+In the test 023.cpp, using s.draw() on a Shape* pointer is invalid syntax and prevents the method call.

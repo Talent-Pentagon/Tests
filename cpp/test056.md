@@ -1,1 +1,1 @@
-056.cpp fails to compile with a template-related error when calling the display function.
+When I run 056.cpp, the copy constructor calls itself recursively (SelfCopy temp(other)), resulting in infinite recursion.

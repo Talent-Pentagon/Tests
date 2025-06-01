@@ -1,1 +1,1 @@
-059.cpp compiles but crashes or produces garbage values after calling the reset method.
+In the test 059.cpp, the dynamically allocated Leak* l = new Leak() is never deleted, causing a memory leak.

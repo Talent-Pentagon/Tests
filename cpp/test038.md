@@ -1,1 +1,1 @@
-038.cpp runs but crashes or produces unexpected behavior when I enter certain index values.
+When I run 038.cpp, the friend int show(); declaration refers to a function that is never defined, causing a linker error.

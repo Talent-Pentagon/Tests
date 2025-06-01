@@ -1,1 +1,1 @@
-032.cpp compiles but gives a warning about control reaching end of non-void function, and produces garbage values.
+In the test 032.cpp, writing this.x instead of the correct pointer syntax causes a compilation failure.

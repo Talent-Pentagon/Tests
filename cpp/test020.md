@@ -1,1 +1,1 @@
-020.cpp runs but the destructor behavior seems incorrect when deleting objects through base class pointers.
+When I run 020.cpp, calling i.~Item without parentheses leads to a syntax error in the destructor invocation.

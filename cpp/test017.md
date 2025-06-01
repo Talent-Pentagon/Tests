@@ -1,1 +1,1 @@
-017.cpp fails to compile when I try to call a method on a const object.
+In file 017.cpp, accessing b.width fails because width is a private member and cannot be accessed externally.

@@ -1,1 +1,1 @@
-041.cpp compiles but crashes with a stack overflow error when I try to add two numbers.
+In the test 041.cpp, calling display(n) passes a Number object to a function that expects a string, resulting in a type mismatch.
