@@ -1,31 +1,16 @@
 #include <iostream>
 using namespace std;
 
-class Array {
+class A {
 private:
-    int arr[5];
-    int size;
+    int value = 42;
 public:
-    Array() : size(5) {
-        for(int i = 0; i < 5; i++) arr[i] = 0;
-    }
-    void setValue(int index, int value) {
-        arr[index] = value;
-    }
-    void display() {
-        for(int i = 0; i < size; i++) {
-            cout << arr[i] << " ";
-        }
-        cout << endl;
-    }
+    friend void show(A& a);
 };
 
+
 int main() {
-    Array a;
-    int index, value;
-    cout << "Enter index (0-4) and value: ";
-    cin >> index >> value;
-    a.setValue(index, value);
-    a.display();
+    A obj;
+    show(obj);
     return 0;
 }
