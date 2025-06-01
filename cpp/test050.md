@@ -1,1 +1,1 @@
-Test050 fails to compile with a syntax error in the friend function definition.
+050.cpp fails to compile with a syntax error in the friend function definition.

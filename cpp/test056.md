@@ -1,1 +1,1 @@
-Test056 fails to compile with a template-related error when calling the display function.
+056.cpp fails to compile with a template-related error when calling the display function.

@@ -1,1 +1,1 @@
-Test059 compiles but crashes or produces garbage values after calling the reset method.
+059.cpp compiles but crashes or produces garbage values after calling the reset method.

@@ -1,1 +1,1 @@
-Test032 compiles but gives a warning about control reaching end of non-void function, and produces garbage values.
+032.cpp compiles but gives a warning about control reaching end of non-void function, and produces garbage values.
