@@ -1,0 +1,1 @@
+In file 046.c Elephant_destroy does not free any allocated memory, causing a memory leak when elephant objects are destroyed.

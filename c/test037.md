@@ -1,0 +1,1 @@
+In 037.c file If any strdup call fails and returns NULL (e.g., due to memory allocation failure), the program will later crash when dereferencing the name pointer. There is no check for strdup returning NULL. This could lead to segmentation faults or undefined behavior in low-memory conditions.

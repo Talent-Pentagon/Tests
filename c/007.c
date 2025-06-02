@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct BankAccount {
     int accountNumber;
@@ -15,13 +16,16 @@ void deposit(BankAccount* acc, double amount) {
 
 void withdraw(BankAccount* acc, double amount) {
     if (acc->balance >= amount) {
+        acc->balance -= amount;
     } else {
         printf("Insufficient funds.\n");
+        fflush(stdout);
     }
 }
 
 void print(BankAccount* acc) {
     printf("Account #%d, Balance: %.2f\n", acc->accountNumber, acc->balance);
+    fflush(stdout);
 }
 
 BankAccount createAccount(int accountNumber, double initialBalance) {
@@ -31,9 +35,25 @@ BankAccount createAccount(int accountNumber, double initialBalance) {
 
 int main() {
     BankAccount acc = createAccount(12345, 100.0);
-    acc.print(&acc);
-    acc.deposit(&acc, 50.0);
-    acc.withdraw(&acc, 30.0);
-    acc.print(&acc);
+    char command[20];
+    double amount;
+
+    while (scanf("%s", command) != EOF) {
+        if (strcmp(command, "deposit") == 0) {
+            // No check if scanf succeeds, amount could be invalid input
+            scanf("%lf", &amount);
+            acc.deposit(&acc, amount);
+        } else if (strcmp(command, "withdraw") == 0) {
+            // No check if scanf succeeds, amount could be invalid input
+            scanf("%lf", &amount);
+            acc.withdraw(&acc, amount);
+        } else if (strcmp(command, "print") == 0) {
+            acc.print(&acc);
+        } else if (strcmp(command, "exit") == 0) {
+            break;
+        }
+        // No else case for invalid commands
+    }
+
     return 0;
 }

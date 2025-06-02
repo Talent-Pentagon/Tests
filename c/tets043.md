@@ -1,0 +1,1 @@
+In file 043.c The condition if (inv->size > inv->capacity) is incorrect.

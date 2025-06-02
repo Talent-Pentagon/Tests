@@ -1,0 +1,1 @@
+In file 055.c there is a compilation error like error: 'struct Order' has no member named 'prce'

@@ -1,0 +1,1 @@
+In file 040.c The check in addTask uses if (s->count > 10) but should be if (s->count >= 10).

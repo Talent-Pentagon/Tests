@@ -1,0 +1,1 @@
+In 028.c file The code does not check the result of malloc, risking dereferencing NULL pointers if memory allocation fails.
