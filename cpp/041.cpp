@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
-class Number {
+class Person {
 public:
-    int get() { return 42; }
+    string name;
+
+    Person(string n) : name(n) {}
+
+    void greet() {
+        cout << "Hello, " + name << endl;
+    }
 };
 
-void display(string n) {
-    cout << "Value: " << n << endl;
-}
-
 int main() {
-    Number n;
-    display(n);
+    Person p(5); 
+    p.greet();
+    return 0;
 }
