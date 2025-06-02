@@ -40,11 +40,10 @@ int main() {
 
     while (scanf("%s", command) != EOF) {
         if (strcmp(command, "deposit") == 0) {
-            // No check if scanf succeeds, amount could be invalid input
+
             scanf("%lf", &amount);
             acc.deposit(&acc, amount);
         } else if (strcmp(command, "withdraw") == 0) {
-            // No check if scanf succeeds, amount could be invalid input
             scanf("%lf", &amount);
             acc.withdraw(&acc, amount);
         } else if (strcmp(command, "print") == 0) {
@@ -52,7 +51,7 @@ int main() {
         } else if (strcmp(command, "exit") == 0) {
             break;
         }
-        // No else case for invalid commands
+
     }
 
     return 0;

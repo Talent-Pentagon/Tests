@@ -11,7 +11,7 @@ double toFahrenheit(Temperature* temp) {
 
 int main() {
     double celsius;
-    // No check if scanf successfully reads a double
+
     scanf("%lf", &celsius);
 
     Temperature temp = {celsius, toFahrenheit};

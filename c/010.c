@@ -18,11 +18,9 @@ int main() {
 
     while (scanf("%49s %lf %lf", name, &hours, &rate) == 3) {
         Employee emp;
-        // Copy name safely
         strncpy(emp.name, name, sizeof(emp.name) - 1);
         emp.name[sizeof(emp.name) - 1] = '\0';
 
-        // No validation for negative or zero hours/rate
         emp.hoursWorked = hours;
         emp.hourlyRate = rate;
         emp.calculatePay = calculatePay;
