@@ -1,0 +1,1 @@
+In 010.c The program does not validate that hoursWorked and hourlyRate are positive numbers, which can cause incorrect or nonsensical pay calculations.

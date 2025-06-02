@@ -1,0 +1,1 @@
+In file 031.c The speed calculation returns 0 when time is zero but does not notify the user about division by zero or invalid time input.

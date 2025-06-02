@@ -1,0 +1,1 @@
+In 049.c The scanf format specifier for reading the string e.name is %29s to prevent buffer overflow, but the Employee struct's function pointer uses struct Employee*, which is undefined because the struct is unnamed — this causes a compile error.

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Student {
     private String name;
     private int[] grades;
@@ -11,7 +13,10 @@ class Student {
         int sum = 0;
         for (int grade : grades)
             sum += grade;
-        return grades.length == 0 ? 0 : sum / grades.length; // BUG: integer division
+
+        // ❌ Bug: Cast is in the wrong place — sum / grades.length is int division
+        // (decimal part is truncated)
+        return grades.length == 0 ? 0 : (int) (sum / grades.length);
     }
 
     public void printInfo() {
@@ -19,8 +24,14 @@ class Student {
     }
 
     public static void main(String[] args) {
-        int[] grades = { 90, 80, 70, 85 };
-        Student student = new Student("Alice", grades);
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        String[] gradeStrings = sc.nextLine().split(" ");
+        int[] grades = new int[gradeStrings.length];
+        for (int i = 0; i < gradeStrings.length; i++) {
+            grades[i] = Integer.parseInt(gradeStrings[i]);
+        }
+        Student student = new Student(name, grades);
         student.printInfo();
     }
 }

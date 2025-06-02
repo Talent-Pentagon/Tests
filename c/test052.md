@@ -1,0 +1,1 @@
+In 052.c file In addBook, the realloc call does not increase the allocation size (sizeof(Book) * (lib->count) instead of lib->count + 1), so the buffer does not grow to hold the new book, causing possible memory corruption.
