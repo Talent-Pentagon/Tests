@@ -18,7 +18,7 @@
         "language": "java",
         "category": "NA",
         "description": "NA",
-        "filename": "Counter.java"
+        "filename": "AccountLockoutChecker.java"
     },
     {
         "test_module": "004",
@@ -55,12 +55,12 @@
         "description": "NA",
         "filename": "008.cpp"
     },
-        {
+    {
         "test_module": "009",
         "language": "java",
         "category": "NA",
         "description": "NA",
-        "filename": "Student.java"
+        "filename": "AuditLogger.java"
     },
     {
         "test_module": "010",
@@ -77,6 +77,13 @@
         "filename": "011.cpp"
     },
     {
+        "test_module": "012",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "AuthenticationSystem.java"
+    },
+    {
         "test_module": "013",
         "language": "c",
         "category": "NA",
@@ -89,6 +96,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "014.cpp"
+    },
+    {
+        "test_module": "015",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "BruteForceDetector.java"
     },
     {
         "test_module": "016",
@@ -105,6 +119,13 @@
         "filename": "017.cpp"
     },
     {
+        "test_module": "018",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "CertChecker.java"
+    },
+    {
         "test_module": "019",
         "language": "c",
         "category": "NA",
@@ -117,6 +138,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "020.cpp"
+    },
+    {
+        "test_module": "021",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "CSRFTokenGenerator.java"
     },
     {
         "test_module": "022",
@@ -133,6 +161,13 @@
         "filename": "023.cpp"
     },
     {
+        "test_module": "024",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "EncryptionKeyValidator.java"
+    },
+    {
         "test_module": "025",
         "language": "c",
         "category": "NA",
@@ -145,6 +180,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "026.cpp"
+    },
+    {
+        "test_module": "027",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "Encryptor.java"
     },
     {
         "test_module": "028",
@@ -161,6 +203,13 @@
         "filename": "029.cpp"
     },
     {
+        "test_module": "030",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "Firewall.java"
+    },
+    {
         "test_module": "031",
         "language": "c",
         "category": "NA",
@@ -173,6 +222,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "032.cpp"
+    },
+    {
+        "test_module": "033",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "GenerateToken.java"
     },
     {
         "test_module": "034",
@@ -189,6 +245,13 @@
         "filename": "035.cpp"
     },
     {
+        "test_module": "036",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "HashVerifier.java"
+    },
+    {
         "test_module": "037",
         "language": "c",
         "category": "NA",
@@ -201,6 +264,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "038.cpp"
+    },
+    {
+        "test_module": "039",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "IPBlanclistChecker.java"
     },
     {
         "test_module": "040",
@@ -217,6 +287,13 @@
         "filename": "041.cpp"
     },
     {
+        "test_module": "042",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "PasswordValidator.java"
+    },
+    {
         "test_module": "043",
         "language": "c",
         "category": "NA",
@@ -229,6 +306,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "044.cpp"
+    },
+    {
+        "test_module": "045",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "PathTraversalChecker.java"
     },
     {
         "test_module": "046",
@@ -245,6 +329,13 @@
         "filename": "047.cpp"
     },
     {
+        "test_module": "048",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "RoleAccessControl.java"
+    },
+    {
         "test_module": "049",
         "language": "c",
         "category": "NA",
@@ -257,6 +348,13 @@
         "category": "NA",
         "description": "NA",
         "filename": "050.cpp"
+    },
+    {
+        "test_module": "051",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "SessionValidator.java"
     },
     {
         "test_module": "052",
@@ -273,6 +371,13 @@
         "filename": "053.cpp"
     },
     {
+        "test_module": "054",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "SQLInjectionDetector.java"
+    },
+    {
         "test_module": "055",
         "language": "c",
         "category": "NA",
@@ -287,6 +392,13 @@
         "filename": "056.cpp"
     },
     {
+        "test_module": "057",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "TwoFactorAuth.java"
+    },
+    {
         "test_module": "058",
         "language": "c",
         "category": "NA",
@@ -299,5 +411,12 @@
         "category": "NA",
         "description": "NA",
         "filename": "059.cpp"
+    },
+    {
+        "test_module": "060",
+        "language": "java",
+        "category": "NA",
+        "description": "NA",
+        "filename": "XSSDetector.java"
     }
 ]

@@ -1,1 +1,8 @@
-In Student.java,Truncates decimal part, leading to incorrect average (e.g., 81.5 becomes 81).
+When I run AuditLogger.java Actions containing the colon character will break the log format by injecting extra separators.
+
+
+
+
+
+
+

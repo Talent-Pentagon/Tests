@@ -1,0 +1,1 @@
+When I run AuthenticationSystem.java Credentials are hardcoded, so anyone who inspects the source can bypass authentication by using “admin”/“password123.”

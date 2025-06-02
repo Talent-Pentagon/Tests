@@ -1,1 +1,1 @@
-Withdrawals appear successful but balance remains unchanged.
+In the file 007.c The program does not validate user input for commands or numeric amounts, which may cause unexpected behavior or crashes when invalid input is entered.

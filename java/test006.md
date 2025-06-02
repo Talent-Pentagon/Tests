@@ -1,1 +1,1 @@
-In Animals.java, subclass does not call superclass constructor explicitly. Causes compilation failure — breaks unit test runs with inputs.
+When I run Animals.java If the provided name is an empty string, the output becomes " says woof" instead of showing a valid name.

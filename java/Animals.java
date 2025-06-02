@@ -1,4 +1,4 @@
-class Animal {
+public class Animal {
     String name;
 
     public Animal(String name) {
@@ -7,10 +7,8 @@ class Animal {
 }
 
 class Dog extends Animal {
-    // ❌ Bug: Missing call to super(name), causes compilation error
     public Dog(String name) {
-        // Implicit call to super() fails because Animal doesn't have a no-arg
-        // constructor
+        super(name);
     }
 
     void bark() {

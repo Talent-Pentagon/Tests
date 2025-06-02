@@ -1,1 +1,1 @@
-Incorrect conversion formula.
+In 025.c The code uses an anonymous struct type but references struct Temp* in the function pointer, causing a type mismatch.

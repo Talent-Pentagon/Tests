@@ -16,8 +16,11 @@ void deposit(Account* acc, double amount) {
 }
 
 int withdraw(Account* acc, double amount) {
-    acc->balance -= amount;
-    return 1;
+    if (amount <= acc->balance) {
+        acc->balance -= amount;
+        return 1;
+    }
+    return 0;
 }
 
 void print(Account* acc) {
@@ -26,9 +29,30 @@ void print(Account* acc) {
 
 int main() {
     Account acc = {"Alice", 1000.0, deposit, withdraw, print};
-    acc.print(&acc);
-    acc.deposit(&acc, 500);
-    acc.withdraw(&acc, 200);
-    acc.print(&acc);
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        char op[50];
+        double amount;
+        scanf("%s", op);
+
+        if (strcmp(op, "deposit") == 0) {
+            scanf("%lf", &amount);
+            acc.deposit(&acc, amount);
+        } else if (strcmp(op, "withdraw") == 0) {
+            scanf("%lf", &amount);
+            if (!acc.withdraw(&acc, amount)) {
+                printf("Insufficient funds\n");
+            }
+        } else if (strcmp(op, "print") == 0) {
+            acc.print(&acc);
+        } else {
+            printf("Unknown operation: %s\n", op);
+            int ch;
+            while ((ch = getchar()) != '\n' && ch != EOF);
+        }
+    }
+
     return 0;
 }

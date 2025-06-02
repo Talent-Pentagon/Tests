@@ -1,1 +1,1 @@
-Missing principal in interest calculation.
+In 022.c The program does not validate that principal, rate, and time are positive, allowing invalid or nonsensical interest calculations.
