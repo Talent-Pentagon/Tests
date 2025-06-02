@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Leak {
@@ -8,5 +9,14 @@ public:
 };
 
 int main() {
-    Leak* l = new Leak();
+    int n;
+    cin >> n;
+
+    vector<Leak*> leaks;
+
+    for (int i = 0; i < n; ++i) {
+        leaks.push_back(new Leak());
+    }
+
+    return 0;
 }

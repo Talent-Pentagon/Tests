@@ -1,1 +1,1 @@
-In the 008.cpp the Circle area is calculated incorrectly, misleading result in output.
+In the 008.cpp The Circle object is never deleted, causing a memory leak.

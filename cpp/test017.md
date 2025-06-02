@@ -1,1 +1,1 @@
-In file 017.cpp, accessing b.width fails because width is a private member and cannot be accessed externally.
+In file 017.cpp, b.width is uninitialized and yields undefined output.

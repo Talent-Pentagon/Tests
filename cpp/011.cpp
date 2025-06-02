@@ -5,7 +5,6 @@ class Person {
     string name;
 public:
     Person(string n) {
-        name == n; 
     }
     void sayName() {
         cout << "Name is: " << name << endl;

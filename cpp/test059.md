@@ -1,1 +1,1 @@
-In the test 059.cpp, the dynamically allocated Leak* l = new Leak() is never deleted, causing a memory leak.
+In the test 059.cpp, memory leak.

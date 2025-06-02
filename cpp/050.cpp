@@ -3,7 +3,7 @@ using namespace std;
 
 class Parent {
 public:
-    virtual void greet() {
+    void greet() {
         cout << "Hello from Parent" << endl;
     }
 };

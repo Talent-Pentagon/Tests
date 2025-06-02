@@ -1,1 +1,1 @@
-When I run 056.cpp, the copy constructor calls itself recursively (SelfCopy temp(other)), resulting in infinite recursion.
+When I run 056.cpp, b.value remains uninitialized and prints an incorrect value.

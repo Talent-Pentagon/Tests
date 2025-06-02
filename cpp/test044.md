@@ -1,1 +1,1 @@
-In file 044.cpp, the sum method is declared to return int but does not have a return statement, leading to undefined behavior.
+In file 044.cpp, The sum function returns an uninitialized variable, causing undefined output.

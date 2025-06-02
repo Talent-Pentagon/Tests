@@ -1,1 +1,1 @@
-In the test 050.cpp, Child::greet lacks the override specifier while attempting to override a base class method, causing a mismatch risk.
+In the test 050.cpp, calling p->greet() invokes Parent::greet due to static binding.

@@ -2,7 +2,10 @@
 using namespace std;
 
 class Base {
-    
+public:
+    virtual void show() {
+        cout << "Base" << endl;
+    }
 };
 
 class Derived : public Base {
@@ -13,6 +16,19 @@ public:
 };
 
 int main() {
-    Derived d;
-    d.show();
+    string type;
+    cin >> type;
+
+    Base* b = nullptr;
+
+    if (type == "base") {
+        b = new Base();
+    } else if (type == "derived") {
+        b = new Derived();
+    } else {
+        cout << "Unknown" << endl;
+    }
+
+    b->show();
+    delete b;
 }

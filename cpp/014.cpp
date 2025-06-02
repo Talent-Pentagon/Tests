@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 class Animal {
@@ -8,9 +9,15 @@ public:
 
 class Dog : public Animal {
 public:
-    Dog(int a) : Animal() {} 
+    Dog(int a) : Animal(a) {}
 };
 
-int main() {
-    Dog d(5);
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cerr << "Usage: " << argv[0] << " <age>" << endl;
+        return 1;
+    }
+    int age = atoi(argv[0]);
+    Dog d(age);
+    return 0;
 }

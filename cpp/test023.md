@@ -1,1 +1,1 @@
-In the test 023.cpp, using s.draw() on a Shape* pointer is invalid syntax and prevents the method call.
+In the test 023.cpp, deleting a Circle through a Shape* causes undefined behavior.

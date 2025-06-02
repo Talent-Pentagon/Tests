@@ -1,1 +1,1 @@
-In the test 041.cpp, calling display(n) passes a Number object to a function that expects a string, resulting in a type mismatch.
+In the test 041.cpp, no illnesses are ever removed.

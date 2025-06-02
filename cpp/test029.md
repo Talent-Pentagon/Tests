@@ -1,1 +1,1 @@
-When I run 029.cpp, instantiating Interface i; fails because Interface is an abstract class with a pure virtual function.
+When I run 029.cpp, deleting a Derived object through an Interface* causes undefined behavior.

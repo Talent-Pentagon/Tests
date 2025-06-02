@@ -9,6 +9,5 @@ public:
 };
 
 int main() {
-    Item i;
-    i.~Item;
+    Item* i = new Item();
 }

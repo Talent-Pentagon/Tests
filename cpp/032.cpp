@@ -2,10 +2,10 @@
 using namespace std;
 
 class Demo {
-    int x = 5;
+    int x;
 public:
     void show() {
-        cout << this.x << endl;
+        cout << this->x << endl;
     }
 };
 

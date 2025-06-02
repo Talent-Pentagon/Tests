@@ -8,7 +8,6 @@ public:
     SelfCopy(int v) : value(v) {}
 
     SelfCopy(const SelfCopy& other) {
-        SelfCopy temp(other);
     }
 
     void print() {
@@ -19,6 +18,6 @@ public:
 int main() {
     SelfCopy a(10);
     SelfCopy b = a;
-    b.print(); 
+    b.print();
     return 0;
 }

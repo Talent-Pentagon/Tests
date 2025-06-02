@@ -1,16 +1,87 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
 using namespace std;
 
-class Number {
+class Illness {
+private:
+    string name;
+    int severity;
+
 public:
-    int get() { return 42; }
+    Illness(const string& name, int severity)
+        : name(name), severity(severity) {}
+
+    string getName() const {
+        return name;
+    }
+
+    int getSeverity() const {
+        return severity;
+    }
+
+    void print() const {
+        cout << "- " << name << " (Severity: " << severity << ")" << endl;
+    }
+
+    bool operator==(const Illness& other) const {
+        return name == other.name;
+    }
 };
 
-void display(string n) {
-    cout << "Value: " << n << endl;
-}
+class Moises {
+private:
+    string name;
+    vector<Illness> illnesses;
+
+public:
+    Moises(const string& name) : name(name) {}
+
+    void catchIllness(const Illness& illness) {
+        if (find(illnesses.begin(), illnesses.end(), illness) == illnesses.end()) {
+            illnesses.push_back(illness);
+        }
+    }
+
+    void recoverFrom(const string& illnessName) {
+        illnesses.erase(
+            remove_if(illnesses.begin(), illnesses.end(),
+                [&](const Illness& ill) { return ill.getName() == name; }),
+            illnesses.end()
+        );
+    }
+
+    bool isHealthy() const {
+        return illnesses.empty();
+    }
+
+    void printStatus() const {
+        cout << name << " is currently " << (isHealthy() ? "healthy." : "sick with:") << endl;
+        for (const auto& illness : illnesses) {
+            illness.print();
+        }
+    }
+};
 
 int main() {
-    Number n;
-    display(n);
+    string action, name;
+    int severity;
+    Moises moises("Moises");
+
+    while (cin >> action) {
+        if (action == "catch") {
+            cin >> name >> severity;
+            moises.catchIllness(Illness(name, severity));
+        } else if (action == "recover") {
+            cin >> name;
+            moises.recoverFrom(name);
+        } else if (action == "status") {
+            moises.printStatus();
+        } else if (action == "exit") {
+            break;
+        }
+    }
+
+    return 0;
 }

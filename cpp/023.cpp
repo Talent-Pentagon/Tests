@@ -3,6 +3,9 @@ using namespace std;
 
 class Shape {
 public:
+    ~Shape() {
+        cout << "Destroying Shape" << endl;
+    }
     virtual void draw() {
         cout << "Drawing Shape" << endl;
     }
@@ -17,6 +20,6 @@ public:
 
 int main() {
     Shape* s = new Circle;
-    s.draw();
+    s->draw();
     delete s;
 }

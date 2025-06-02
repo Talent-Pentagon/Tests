@@ -1,13 +1,20 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 class Box {
-private:
-    int width = 10;
+public:
+    int width;
+    Box(int w) {}
 };
 
-int main() {
-    Box b;
-    cout << b.width << endl; 
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cerr << "Usage: " << argv[0] << " <width>" << endl;
+        return 1;
+    }
+    int width = atoi(argv[1]);
+    Box b(width);
+    cout << b.width << endl;
     return 0;
 }

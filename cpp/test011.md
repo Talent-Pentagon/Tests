@@ -1,1 +1,1 @@
-In the test 011.cpp, the constructor uses == instead of an assignment operator, so name is never initialized.
+In the test 011.cpp, sayName() prints an empty string.

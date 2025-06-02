@@ -1,15 +1,33 @@
 #include <iostream>
-using namespace std;
+#include <string>
+#include <cstdlib>
 
-class Sample {
-    int value = 10;
+class Friend {
+private:
+    std::string name;
+    int age;
+
 public:
-    void print() const {
-        value = 5;
+    Friend(const std::string& name, int age) : name(name), age(age) {}
+
+    std::string greet() const {
+        return "Hi, I'm " + name + " and I'm " + std::to_string(age) + " years old.";
+    }
+
+    std::string sayFavoriteHobby(const std::string& hobby) const {
+        return name + " loves " + hobby + ".";
     }
 };
 
-int main() {
-    Sample s;
-    s.print();
+int main(int argc, char* argv[]) {
+    std::string name = argv[1];
+    int age = std::atoi(argv[1]);
+    std::string hobby = argv[2];
+
+    Friend f(name, age);
+
+    std::cout << f.greet() << std::endl;
+    std::cout << f.sayFavoriteHobby(hobby) << std::endl;
+
+    return 0;
 }

@@ -1,1 +1,7 @@
-When I run 038.cpp, the friend int show(); declaration refers to a function that is never defined, causing a linker error.
+When I run 038.cpp, the loop body runs only once after input ends instead of iterating.
+
+
+
+
+
+

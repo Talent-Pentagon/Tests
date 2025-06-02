@@ -1,34 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-class Counter
-{
-private:
-    int count;
-
-public:
-    Counter()
-    {
-        count = 0;
-    }
-
-    void increment()
-    {
-        count++;
-    }
-
-    int getCount()
-    {
-        count = 0;
-        return count;
-    }
-};
-
-int main()
-{
-    Counter c;
-    c.increment();
-    c.increment();
-    cout << "Count: " << c.getCount() << endl;
+int main() {
+    int a, b;
+    // BUG: forgot to use '&' to pass addresses of a and b
+    scanf("%d %d", a, b);
+    printf("%d\n", a + b);
     return 0;
 }

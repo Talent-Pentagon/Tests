@@ -1,1 +1,1 @@
-When I run 020.cpp, calling i.~Item without parentheses leads to a syntax error in the destructor invocation.
+When I run 020.cpp, the destructor is never called.

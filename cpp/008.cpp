@@ -21,9 +21,8 @@ class Circle : public Shape {
 public:
     Circle(double r) : radius(r) {}
     double area() override {
-        return 2 * 3.14159 * radius;
+        return 3.14159 * radius * radius;
     }
-
 };
 
 int main() {
@@ -32,6 +31,5 @@ int main() {
     cout << "Rectangle area: " << rect->area() << endl;
     cout << "Circle area: " << circ->area() << endl;
     delete rect;
-    delete circ;
     return 0;
 }

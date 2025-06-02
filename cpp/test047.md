@@ -1,1 +1,1 @@
-When I run 047.cpp, passing Derived by value to announce(Base b) slices off the derived portion, so the overridden method is never invoked.
+When I run 047.cpp, Base::speak is called instead of Derived::speak.

@@ -1,1 +1,1 @@
-In the test 032.cpp, writing this.x instead of the correct pointer syntax causes a compilation failure.
+In the test 032.cpp, printing x member yields an undefined value.

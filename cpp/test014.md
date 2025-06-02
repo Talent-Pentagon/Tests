@@ -1,1 +1,1 @@
-When I run 014.cpp, the Animal constructor is invoked without the required int argument, causing a compile-time error.
+When I run 014.cpp, the age is read from the program name rather than the user-provided argument.

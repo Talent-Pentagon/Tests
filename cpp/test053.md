@@ -1,1 +1,1 @@
-In file 053.cpp, marking Derived::show() with override fails because show is not declared as virtual in the base class, leading to a compilation error.
+In file 053.cpp, If the input is neither "base" nor "derived", b remains null and calling b->show() dereferences a null pointer.

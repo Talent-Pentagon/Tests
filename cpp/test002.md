@@ -1,1 +1,2 @@
-When I run 002.cpp, the Counter class returns a 0 even though I used the increment method twice.
+In file 002.cpp the program crashes (segmentation fault). Reads garbage values or skips input entirely.
+
